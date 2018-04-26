@@ -1,0 +1,21 @@
+DROP DATABASE IF EXISTS burgers_db;
+CREATE DATABASE burgers_db;
+
+USE burgers_db;
+
+CREATE TABLE burgers(
+  id INT NOT NULL AUTO_INCREMENT,
+  name VARCHAR(45) NULL,
+  toppings VARCHAR(45) NULL,
+  sauces VARCHAR(45) NULL,
+  PRIMARY KEY (id)
+);
+
+INSERT INTO burgers (name, toppings, sauces)
+VALUES ("cheeseburger", "cheddar cheese", "ketchup");
+
+INSERT INTO burgers (name, toppings, sauces)
+VALUES ("double cheeseburger","pepperjack cheese", "mustard");
+
+INSERT INTO burgers (name, toppings, sauces)
+VALUES ("rodeo burger", "onion rings", "special sauce");
